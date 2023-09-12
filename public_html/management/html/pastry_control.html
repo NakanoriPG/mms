@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ホーム</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Charm|M+PLUS+Rounded+1c&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"><!-- スライド -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8bc1904d08.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="sticky-top header">
+    <div  class="header__inner">
+      <div class="prof-show header-r">
+        <nav>
+          <ul>
+            <il><a class="image" href=""><img src="img/logo_1.png"></a></il>
+            <li><a href="./">HOME</a></li>
+            <li><a href="./">ログイン</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div>
+        <p>商品管理</p>
+    </div>
+    <div>
+      <input type="checkbox" checked>ホームページに表示する
+    </div>
+    <div>
+      <form enctype="multipart/form-data">
+        <table class="mb-5">
+          <tr>
+            <th>商品名</th>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <th>金額</th>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <th>サイズ</th>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <th>説明文</th>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr>
+            <th>メイン画像</th>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <th>サブ画像1</th>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <th>サブ画像2</th>
+            <td><input type="file"></td>
+          </tr>
+        </table>
+        <div class="mb-5"><a href="#">デモ画面</a></div>
+        <input class="mb-5" type="submit" value="登録する">
+      </form>
+    </div>
+  </div>
+  <p class="copy">@hosoya-2022.com</p>
+</body>

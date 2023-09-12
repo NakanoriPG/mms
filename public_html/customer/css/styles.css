@@ -1,0 +1,290 @@
+html {
+  font-family: "Josefin Sans",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  color: #323232;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 0.3rem;
+}
+
+h1,h2,h3 {
+  margin-bottom: 3.5rem;
+}
+
+label {
+  font-size: 20px;
+}
+
+textarea {
+  resize: none;
+  font-size: 18px;
+  height: 130px;
+  width: 320px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  padding: 0.8rem 0.4rem;
+  vertical-align: middle;
+}
+
+td {
+  padding: 0.8rem 0.4rem;
+  vertical-align: middle;
+}
+
+tr{
+  border-top: solid 1px;
+  border-color: #bcbcbc;
+}
+
+.btn {
+  width: 190px;
+  padding: 10px 0;
+  margin: 50px auto;
+  font-size: 20px;
+}
+
+.err {
+  margin: 10px 0;
+  color: #d82626;
+}
+
+/* bbs style */
+.wrapper-body {
+  max-width: 100%;
+  margin: 0px auto 50px;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 80px 12px 0px;
+}
+
+.header {
+  background: rgba(49,41,28,0.8);
+}
+
+.header__inner {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__inner nav ul {
+  margin-bottom: 0;
+  display: flex;
+  padding: 8px 0;
+}
+
+.header__inner nav ul li {
+  font-size: 16px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.header__inner a{
+  color: #fff;
+}
+
+footer nav ul {
+  margin-bottom: 0;
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+footer nav ul li {
+  font-size: 16px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-align: center;
+  display: flex;
+  padding: 0px 15px;
+}
+
+footer nav ul li {
+  border-right: solid 1px #666;
+}
+
+footer nav ul li:first-child {
+  border-left: solid 1px #666;
+}
+
+.header__inner .header-r {
+  display: flex;
+}
+
+.header__inner .prof-show {
+  display: flex;
+  align-items: center;
+}
+
+.header__inner .prof-show .image img {
+  width: 220px;
+  object-fit: cover;
+}
+
+.user-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.form {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.user-delete {
+  text-align: right;
+}
+
+.user-delete .btn {
+  width: 100px;
+  font-size: 12px;
+}
+
+.sweets-image {
+  display: flex;
+  justify-content: center;
+}
+
+.sweets-image-detail {
+  display: flex;
+  justify-content: left;
+}
+
+/* patsry.phpで不要となったが、他のｐｈｐファイルで使用していたらクラス名の変更を要検討 */
+/* .sweets-image a {
+  display: inline;
+} */
+
+.span-block span {
+  display: inline-block;
+}
+
+.imgarea img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.imgarea:empty {
+  width: 0;
+  height: 0;
+}
+
+.file-btn {
+  font-size: 24px;
+  font-weight: bold;
+  background: #222;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+  display: block;
+}
+
+.headline,.copy,#store_headline {
+  text-align: center;
+  margin: 5vh 0;
+}
+
+/*スライダー*/
+.slider .slick-slide {
+  width: 100vw;
+  height: 76vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider .slick-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .slick-arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.2);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0;
+  position: absolute;
+  top: 180px;
+  z-index: 1;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+.slider .slick-arrow::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #08020a;
+  border-width: 3px 3px 0 0;
+  position: absolute;
+  top: 24px;
+  transform: rotate(45deg);
+}
+.slider .slick-next {
+  right: 0;
+}
+.slider .slick-prev {
+  left: 0;
+}
+.slider .slick-next::before {
+  left: 20px;
+}
+.slider .slick-prev::before {
+  border-width: 0 0 3px 3px;
+  right: 22px;
+}
+.dots .slick-dots {
+  text-align: center;
+}
+.dots .slick-dots li {
+  display: inline-block;
+}
+.dots .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 6px;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: #bcbcbc;
+  border-radius: 50%;
+}
+.dots .slick-dots .slick-active button {
+  background: #61141b;
+}
